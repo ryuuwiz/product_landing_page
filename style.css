@@ -1,0 +1,275 @@
+/* Global */
+body,
+input {
+  font: 14px/1.5 "Roboto Mono", monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6f7;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+#header {
+  background: #0a0a23;
+  color: #fff;
+  padding-top: 10px;
+  min-height: 70px;
+  position: fixed;
+  border-bottom: 3px solid #00471b;
+}
+#header #header-img {
+  padding-top: 10px;
+  width: 20%;
+  float: left;
+}
+#header #nav-bar {
+  float: right;
+  margin-top: 10px;
+}
+#header .nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+#header .nav-link:hover {
+  font-weight: bold;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #acd157;
+  color: #acd157;
+}
+#header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+/* Showcase */
+#showcase {
+  min-height: 400px;
+  background: url(https://unsplash.com/photos/xrVDYZRGdw4/download?force=true&w=1920)
+    no-repeat center;
+  text-align: center;
+  color: #fff;
+}
+#showcase h1 {
+  margin-top: 180px;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+#showcase li {
+  font-weight: bold;
+  font-size: 20px;
+  display: inline;
+  padding: 0 2vh 0 2vh;
+}
+
+/* email-form */
+#email-form {
+  padding: 15px;
+  color: #fff;
+  background: #0a0a23;
+}
+#email-form h1 {
+  float: left;
+}
+#email-form form {
+  float: right;
+  margin-top: 20px;
+}
+#email-form #email {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+  border: none;
+  background-color: #fff;
+}
+#email-form #submit {
+  height: 38px;
+  background: #0a0a23;
+  border: 2px solid #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+}
+#email-form #submit:hover {
+  color: #0a0a23;
+  background: #fff;
+}
+
+/* features */
+#features {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#features h2 {
+  padding: 10px;
+}
+
+/* videos */
+#videos {
+  text-align: center;
+}
+#videos iframe {
+  width: 90%;
+  height: 75vh;
+}
+
+/* Certificate */
+#certificate .container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+#certificate .box {
+  padding: 40px;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  background-color: #0a0a23;
+  border: 2px solid #fff;
+}
+#certificate .box p {
+  color: #fff;
+  font-size: 1.4em;
+}
+#certificate .box a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 40px 10px 40px;
+  border: 2px solid #fff;
+}
+#certificate .box a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #0a0a23;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer a:hover {
+  font-weight: bold;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #acd157;
+  color: #acd157;
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  /* Gliobal */
+  .container,
+  #header-img,
+  #nav-bar,
+  #header li,
+  #email-form h1,
+  #email-form form {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  /* Header */
+  #header {
+    padding-bottom: 20px;
+  }
+  #header #header-img {
+    padding-left: 25%;
+    width: 50%;
+  }
+  #header li {
+    padding: 0 20px 0 20px;
+  }
+  /* Showcase */
+  #showcase h1 {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  /* Email Form */
+  #email-form #email,
+  #email-form #submit {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  #email-form #submit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  /* Videos */
+  #videos .container {
+    width: 95%;
+  }
+  #videos iframe {
+    width: 100%;
+    height: 60vh;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+  /* Gliobal */
+  .container,
+  #header-img,
+  #nav-bar,
+  #header li,
+  #email-form h1,
+  #email-form form {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  /* Header */
+  #header {
+    padding-bottom: 20px;
+  }
+  #header #header-img {
+    padding-left: 15%;
+    width: 70%;
+  }
+  #header li {
+    padding: 0 5px 0 5px;
+  }
+  /* Showcase */
+  #showcase h1 {
+    margin-top: 150px;
+    margin-bottom: 10px;
+  }
+  /* Email Form */
+  #email-form #email,
+  #email-form #submit {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  #email-form #submit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  /* Videos */
+  #videos .container {
+    width: 95%;
+  }
+  #videos iframe {
+    width: 100%;
+    height: 30vh;
+  }
+}
